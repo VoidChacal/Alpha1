@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Atividade</title>
+</head>
+<!--Prof infelizmente não conseguir utilizar o Monaca!-->
+<body>
+<form name="Triangulo">
+Primeiro lado:<input type="text" name="lado1"><br>
+Segundo lado:<input type="text" name="lado2"><br>
+Terceiro lado:<input type="text" name="lado3"><br>
+<br>
+<input type="button" value="Resultado" onClick="triangulo()">
+<br><br>
+<input type="text" name="saida" size="25">
+</form>
+<script language="javascript">
+
+var a, b, c, resultado;
+function triangulo() {
+a=parseFloat(document.Triangulo.lado1.value);
+b=parseFloat(document.Triangulo.lado2.value);
+c=parseFloat(document.Triangulo.lado3.value);
+if (a<b+c && b<a+c && c<a+b) {
+if (a==b && b==c) {
+resultado='TRIANGULO EQUILÁTERO';}
+else {
+if (a==b || a==c || c==b) {
+resultado='TRIANGULO ISÓSCELES';}
+else {
+resultado='TRIANGULO ESCALENO';}
+}
+}
+else {
+resultado='NÃO É UM TRIANGULO.';
+}
+document.Triangulo.saida.value = resultado;
+}
+
+</script>
+</body>
+</html>
