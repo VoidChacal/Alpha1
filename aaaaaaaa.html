@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+  <style type="text/css" charset: UTF-8> 
+
+    .content{
+      display:flex;
+      justify-content: center;
+       }
+ 
+    .form{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .field{
+      padding: 10px;
+      margin-bottom: 15px;
+      border:1px solid white;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .escolha{
+      padding: 10px;
+      margin-bottom: 15px;
+      border:1px solid white;
+      border-radius: 5px;
+    }
+    .fundo{
+  background-image: linear-gradient(45deg,black, yellow);
+  height: 100vh;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="fundo">
+    
+<section class="content"> 
+  <div>
+      <h3 class="content" style="charset:UTF-8">Formularion sobre o aumento do preço da banana </h3>
+      
+      <div>
+       <form class="form" method="post" action="aaaaaaa.php">
+         
+         Nome: <input class="field" type="text" name="name">
+         
+         
+         Email: <input class="field" type="email" name="email">
+       
+         
+         <h3>Opinião:  </h3>
+          
+         <textarea class="field" name="message"></textarea>
+      
+       </div>
+         <label>
+          Concorda
+
+         <input type="radio" class="form-check-input" value="concorda" name="opicao">
+         
+         Não concorda
+         <input type="radio" class="form-check-input" value="não concorda" name="opicao">
+       </input>
+         </label>
+         <br>
+         <h3>Estado:</h3>
+         <select name="estado" class="escolha">
+         	<option value="Amazonas">Amazonas</option>
+         	<option value="Bahia">Bahia</option>
+         	<option value="Espírito Santo">Espírito Santo</option>
+         	<option value="São Paulo">São Paulo</option>
+         	<option value="Minas Gerais">Minas Gerais</option>
+         	<option value="Mato Grosso">Mato Grosso</option>
+         	<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+         	<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+         	<option value="Rio de Janeiro">Rio de Janeiro</option>
+         </select>
+         <br>
+         <input class="field" type="submit" value="Enviar">
+       </form> 
+    </section>
+    </div>
+    </div>  
+</body>
+</html>
