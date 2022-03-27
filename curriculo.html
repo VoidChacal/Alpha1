@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Formulario</title>
+  <style type="text/css" charset: UTF-8> 
+
+    .content{
+      display:flex;
+      justify-content: center;
+       }
+ 
+    .form{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .field{
+      padding: 10px;
+      margin-bottom: 15px;
+      border:1px solid white;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .escolha{
+      padding: 10px;
+      margin-bottom: 15px;
+      border:1px solid white;
+      border-radius: 5px;
+    }
+    .fundo{
+  background-image: linear-gradient(45deg,black, yellow);
+  height: 100vh;
+}
+    
+  </style>
+</head>
+<body>
+  <div class="fundo">
+    
+<section class="content"> 
+  <div>
+      <h3 class="content" style="charset:UTF-8">Currículo </h3>
+      
+      <div>
+       <form class="form" method="post" action="banana.php">
+         
+         Nome: <input class="field" type="text" name="name">
+         
+         Bairro: <input class="field" type="text" name="bairro">
+
+         Cidade: <input class="field" type="text" name="cidade">
+
+         Email: <input class="field" type="email" name="email">
+
+         telefone: <input type="text" name="telefone">
+
+         Data de Nascimento: <input type="date" placeholder="Data de nascimento" name="nascimento">
+
+         <br>
+         <h3>Estado Civil:</h3>
+         <select name="estado" class="escolha">
+          <option value="Casado(a)">Casado(a)</option>
+          <option value="Solteiro(a)">Solteiro(a)</option>
+          <option value="Viulvo(a)">Viulvo(a)</option>
+         </select>
+         <br>
+
+         <h3>Objetivo:  </h3>
+          
+         <textarea class="field" name="message"></textarea>
+      
+       </div>
+         
+         <center><h3>Formação</h3></center>
+         
+         Curso: <input class="field" type="text" name="curso">
+         <br>
+         Instituição: <input class="field" type="text" name="Instituicao">
+        
+         Conclusão: <input class="field" type="date" name="data">
+         <input class="field" type="submit" value="Enviar">
+       </form> 
+    </section>
+    </div>
+    </div>  
+</body>
+</html>
